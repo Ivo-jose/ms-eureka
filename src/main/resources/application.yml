@@ -1,0 +1,17 @@
+server:
+  port: ${PORT:8761}
+spring:
+  application:
+    name: ms-eureka
+  security:
+   user:
+      name: ${EUREKA_USER:adminEureka}
+      password: ${EUREKA_PASSWORD:12345}
+  cloud:
+    config:
+      enabled: false
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false 
+    
